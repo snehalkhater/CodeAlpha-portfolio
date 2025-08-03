@@ -303,7 +303,7 @@ nav ul li a:hover::after {
     background: linear-gradient(135deg, #fdf0f0, #ffffff);
     padding: 150px 10%;
     text-align: center;
-    
+
 }
 
 .project-section h2 {
@@ -318,9 +318,11 @@ nav ul li a:hover::after {
     justify-content: center;
     flex-wrap: wrap;
 }
+
 .project-card {
     width: 380px;
-    height: 240px; /* Increase height here */
+    height: 240px;
+    /* Increase height here */
     border-radius: 20px;
     overflow: hidden;
     box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
@@ -331,8 +333,10 @@ nav ul li a:hover::after {
 
 .project-card img {
     width: 100%;
-    height: 100%;  /* Ensure image takes full card height */
-    object-fit: cover;  /* This will keep image aspect nice */
+    height: 100%;
+    /* Ensure image takes full card height */
+    object-fit: cover;
+    /* This will keep image aspect nice */
     transition: transform 0.5s ease, opacity 0.5s ease;
 }
 
@@ -522,7 +526,9 @@ footer small {
 }
 
 @keyframes blobShape {
-    0%, 100% {
+
+    0%,
+    100% {
         border-radius: var(--border-radius-hover);
         transform: scale(0.9);
     }
