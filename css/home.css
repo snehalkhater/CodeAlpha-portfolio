@@ -365,3 +365,114 @@
             background: #e0564b;
             transform: translateY(-3px);
         }
+        
+        footer {
+            background: linear-gradient(135deg, #e0f7fa, #ffffff);
+            padding: 60px 10%;
+            text-align: center;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        footer h3 {
+            font-size: 24px;
+            margin-bottom: 10px;
+            color: #222;
+            /* Dark text for contrast */
+            letter-spacing: 1px;
+        }
+
+        footer p {
+            font-size: 14px;
+            margin-bottom: 20px;
+            color: #555;
+            /* Slightly dark grey */
+        }
+
+        .footer-image img {
+            width: 100px;
+            height: auto;
+            margin-bottom: 20px;
+        }
+
+        footer small {
+            font-size: 12px;
+            color: #666;
+        }
+
+        /* Social Icons Styling */
+        .social-icons a img {
+            width: 24px;
+            height: 24px;
+            margin: 0 10px;
+            opacity: 0.7;
+            transition: opacity 0.3s, transform 0.3s;
+        }
+
+        .social-icons a:hover img {
+            opacity: 1;
+            transform: scale(1.2);
+        }
+
+
+        @keyframes slideInLeft {
+            from {
+                opacity: 0;
+                transform: translateX(-50px);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateX(0);
+            }
+        }
+
+        @keyframes slideInRight {
+            from {
+                opacity: 0;
+                transform: translateX(50px);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateX(0);
+            }
+        }
+
+        @keyframes floatBlob {
+            0% {
+                transform: translate(0, 0) scale(1);
+            }
+
+            100% {
+                transform: translate(30px, 20px) scale(1.1);
+            }
+        }
+
+        @keyframes blobShape {
+
+            0%,
+            100% {
+                border-radius: var(--border-radius-hover);
+                transform: scale(0.9);
+            }
+
+            50% {
+                border-radius: var(--border-radius);
+                transform: scale(0.85);
+            }
+        }
+
+        @media (max-width: 992px) {
+            .about-section {
+                flex-direction: column;
+                text-align: center;
+            }
+
+            .about-image img {
+                width: 70%;
+            }
+
+            .about-content {
+                margin-top: 30px;
+            }
+        }
