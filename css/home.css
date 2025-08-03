@@ -311,3 +311,57 @@
         .project-item:hover img {
             opacity: 0.3;
         }
+        
+        .contact-section {
+            background: linear-gradient(135deg, #e0f7fa, #ffffff);
+            padding: 100px 10%;
+            text-align: center;
+        }
+
+        .section-title {
+            font-size: 36px;
+            color: var(--teal);
+            margin-bottom: 40px;
+        }
+
+        .contact-form {
+            max-width: 600px;
+            margin: 0 auto;
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+
+        .contact-form input,
+        .contact-form textarea {
+            width: 100%;
+            padding: 15px;
+            border: 2px solid var(--teal);
+            border-radius: 10px;
+            font-size: 16px;
+            background: #ffffff;
+            transition: border 0.3s, box-shadow 0.3s;
+        }
+
+        .contact-form input:focus,
+        .contact-form textarea:focus {
+            border-color: var(--accent);
+            box-shadow: 0 0 10px rgba(255, 111, 97, 0.3);
+            outline: none;
+        }
+
+        .contact-form button {
+            padding: 15px;
+            border: none;
+            background: var(--accent);
+            color: #fff;
+            font-size: 18px;
+            border-radius: 10px;
+            cursor: pointer;
+            transition: background 0.3s, transform 0.3s;
+        }
+
+        .contact-form button:hover {
+            background: #e0564b;
+            transform: translateY(-3px);
+        }
