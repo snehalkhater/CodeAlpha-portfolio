@@ -7,15 +7,16 @@
     <title>Portfolio-site</title>
 </head>
 <link rel="stylesheet" href="./css/home.css">
+
 <body>
     <nav>
         <div class="logo">SNEHAL.DEV</div>
         <Ul>
-            <li><a href="#">Home</a></li>
-            <li><a href="#">About</a></li>
-            <li><a href="#">Skills</a></li>
-            <li><a href="#">Project</a></li>
-            <li><a href="#">Contact</a></li>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#projects">Project</a></li>
+            <li><a href="#contact">Contact</a></li>
         </Ul>
     </nav>
     <!-- Home -->
@@ -82,30 +83,43 @@
             </div>
         </div>
     </section>
-    <!-- pojects -->
-    <section id="projects" class="projects-section">
+    <!-- Projects -->
+    <section id="projects" class="project-section">
         <h2>My Projects</h2>
-        <div class="projects-grid">
-            <div class="project-item">
-                <img src="./images/project1.jpg" alt="Project 1">
-                <h3>E-Commerce Website</h3>
-                <p>HTML, CSS, JavaScript</p>
-                <a href="#">View Project</a>
+
+        <div class="projects-container">
+            <!-- Project 1 -->
+            <div class="project-card">
+                <img src="./image/project-1.png" alt="Fashion Store">
+                <div class="project-info">
+                    <h3>Fashion Store</h3>
+                    <p>HTML, CSS, Bootstrap</p>
+                    <a href="#" class="view-btn">View Project</a>
+                </div>
             </div>
-            <div class="project-item">
-                <img src="./images/project2.jpg" alt="Project 2">
-                <h3> Fitness Trainer Website</h3>
-                <p>HTML, CSS, JS</p>
-                <a href="#">View Project</a>
+
+            <!-- Project 2 -->
+            <div class="project-card">
+                <img src="./image/project-2.png" alt="Landing Page">
+                <div class="project-info">
+                    <h3>Landing Page</h3>
+                    <p>HTML, CSS, JavaScript</p>
+                    <a href="#" class="view-btn">View Project</a>
+                </div>
             </div>
-            <div class="project-item">
-                <img src="./images/project3.jpg" alt="Project 3">
-                <h3>Portfolio Website</h3>
-                <p>HTML, CSS</p>
-                <a href="#">View Project</a>
+
+            <!-- Project 3 -->
+            <div class="project-card">
+                <img src="./image/project-3.png" alt="Portfolio Website">
+                <div class="project-info">
+                    <h3>Portfolio</h3>
+                    <p>HTML, CSS, React</p>
+                    <a href="#" class="view-btn">View Project</a>
+                </div>
             </div>
         </div>
     </section>
+
     <!-- contact -->
     <section id="contact" class="contact-section">
         <h2 class="section-title">Contact</h2>
@@ -122,9 +136,9 @@
         <h3>SNEHAL.DEV</h3>
         <p>Crafting frontend experiences with code & creativity ✨</p>
         <div class="social-icons">
-            <a href="#"><img src="./images/instagram.png" alt="Instagram"></a>
-            <a href="#"><img src="./images/github.png" alt="GitHub"></a>
-            <a href="#"><img src="./images/linkedin.png" alt="LinkedIn"></a>
+            <a href="#"><img src="./image/instagram.png" alt="Instagram"></a>
+            <a href="#"><img src="./image/github.png" alt="GitHub"></a>
+            <a href="#"><img src="./image/linkedin.png" alt="LinkedIn"></a>
         </div>
         <small>&copy; 2025 Snehal Khater. All rights reserved.</small>
     </footer>
