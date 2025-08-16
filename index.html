@@ -10,7 +10,8 @@
 
 <body>
     <nav>
-        <div class="logo">SNEHAL.DEV</div>
+        <div class="logo">SNEHAL</div>
+        <div class="menu-toggle" id="menu-toggle">☰</div>
         <Ul>
             <li><a href="#home">Home</a></li>
             <li><a href="#about">About</a></li>
@@ -26,8 +27,8 @@
             <h1>Hi, I am <span>Snehal Khater</span></h1>
             <p>I build responsive & modern websites.</p>
             <div class="buttons">
-                <button>Hire me</button>
-                <button>Download CV</button>
+                <button><a href="#">Hire me</a></button>
+                <button><a href="#">Download CV</a></button>
             </div>
         </div>
         <div class="image-wrapper">
@@ -52,11 +53,13 @@
             <div class="about-info"><span>Zip code:</span>414402</div><br>
             <div class="about-info"><span>Email:</span> Khatersnehal@gmail.com</div><br>
             <div class="about-info"><span>Phone:</span> +91-8767524245</div><br>
-            <div class="tags">
-                <span>Drawing</span>
-                <span>Music</span>
-                <span>Travel</span>
-                <span>Movie</span>
+            <div class="about-info"><span>Hobbies:</span>
+                <div class="tags">
+                    <span>Drawing</span>
+                    <span>Music</span>
+                    <span>Travel</span>
+                    <span>Movie</span>
+                </div>
             </div>
         </div>
     </section>
@@ -93,8 +96,8 @@
                 <img src="./image/project-1.png" alt="Fashion Store">
                 <div class="project-info">
                     <h3>Fashion Store</h3>
-                    <p>HTML, CSS, Bootstrap</p>
-                    <a href="#" class="view-btn">View Project</a>
+                    <p>HTML, CSS</p>
+                    <a href="https://stylehubin.netlify.app/" target="_blank" rel="noopener noreferrer" class="view-btn">View Project</a>
                 </div>
             </div>
 
@@ -102,9 +105,9 @@
             <div class="project-card">
                 <img src="./image/project-2.png" alt="Landing Page">
                 <div class="project-info">
-                    <h3>Landing Page</h3>
+                    <h3>Anytime Fitness</h3>
                     <p>HTML, CSS, JavaScript</p>
-                    <a href="#" class="view-btn">View Project</a>
+                    <a href="https://github.com/snehalkhater/Fit-N-Fine"  target="_blank" rel="noopener noreferrer" class="view-btn">View Project</a>
                 </div>
             </div>
 
@@ -112,9 +115,9 @@
             <div class="project-card">
                 <img src="./image/project-3.png" alt="Portfolio Website">
                 <div class="project-info">
-                    <h3>Portfolio</h3>
-                    <p>HTML, CSS, React</p>
-                    <a href="#" class="view-btn">View Project</a>
+                    <h3>cakezy</h3>
+                    <p>HTML, CSS, js</p>
+                    <a href="https://github.com/snehalkhater/CodeAlpha-portfolio" target="_blank" rel="noopener noreferrer" class="view-btn">View Project</a>
                 </div>
             </div>
         </div>
@@ -133,17 +136,33 @@
     <hr>
     <!-- Footer Section -->
     <footer>
-        <h3>SNEHAL.DEV</h3>
+        <h3>SNEHAL</h3>
         <p>Crafting frontend experiences with code & creativity ✨</p>
         <div class="social-icons">
-            <a href="#"><img src="./image/instagram.png" alt="Instagram"></a>
-            <a href="#"><img src="./image/github.png" alt="GitHub"></a>
-            <a href="#"><img src="./image/linkedin.png" alt="LinkedIn"></a>
+            <a href="https:/instagram.com" target="_blank" rel="noopener noreferrer">
+                <img src="./image/instagram.png" alt="Instagram">
+            </a>
+            <a href="https://github.com/snehalkhater" target="_blank" rel="noopener noreferrer">
+                <img src="./image/github.png" alt="GitHub">
+            </a>
+            <a href="https://www.linkedin.com/in/snehal-khater-81797237a/" target="_blank" rel="noopener noreferrer">
+                <img src="./image/linkedin.png" alt="LinkedIn">
+            </a>
+            <a href="https://peerlist.io/khaterssnehal" target="_blank" rel="noopener noreferrer">
+                <img src="./image/peerlist.jpg" alt="Peerlist">
+            </a>
         </div>
+
         <small>&copy; 2025 Snehal Khater. All rights reserved.</small>
     </footer>
+    <script>
+        const toggle = document.getElementById('menu-toggle');
+        const navMenu = document.querySelector('nav ul');
 
-
+        toggle.addEventListener('click', () => {
+            navMenu.classList.toggle('show');
+        });
+    </script>
 </body>
 
 </html>
