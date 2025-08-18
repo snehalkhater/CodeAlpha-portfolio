@@ -500,6 +500,10 @@ nav ul li a:hover::after {
     background: #e0564b;
     transform: translateY(-3px);
 }
+.contact-form button a{
+    color: #f5f5f5;
+    text-decoration: none;
+}
 
 /* Footer */
 footer {
